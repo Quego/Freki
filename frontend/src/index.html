@@ -1,14 +1,31 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Frontend</title>
-  <base href="/">
+<html lang="fr">
 
+<head>
+  <!--Add a <base href> element to the app for pushState routing to work.
+    The browser uses the <base href> value to prefix relative URLs when referencing CSS files, scripts, and images.
+    Must be placed just after the head tag.-->
+  <base href="/">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Freki</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freki - Workout application">
+  <meta name="author" content="Quentin MACE">
+  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- CSS file provied by http://getbootstrap.com/ -->
+  <link href="/assets/include/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
-<body>
-  <freki-root></freki-root>
+
+<body class="container-fluid">
+  <freki-root>Loading...</freki-root>
 </body>
+
+<!-- To place at the end of the document (Page loading faster) -->
+<script src="assets/include/jquery/jquery.min.js"></script>
+<!-- JS file provided by http://getbootstrap.com/ -->
+<script src="assets/include/bootstrap/js/bootstrap.min.js"></script>
+
 </html>
